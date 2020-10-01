@@ -53,6 +53,26 @@ class Size(models.Model):
         verbose_name = "Размер"
         verbose_name_plural = "Размеры"
 
+class Age(models.Model):
+    name = models.CharField("Возраст", max_length=30)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Возраст"
+        verbose_name_plural = "Возраста"
+
+class Temperament(models.Model):
+    name = models.CharField("Темперамент", max_length=30)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Темперамент"
+        verbose_name_plural = "Темпераменты"
+
 class Animal(models.Model):
     name = models.CharField("Кличка", max_length=60)
     type = models.ManyToManyField(Type, verbose_name="вид")
@@ -60,15 +80,13 @@ class Animal(models.Model):
     sort = models.ManyToManyField(Gender, verbose_name="пол", related_name="animal_gender")
     weight = models.PositiveSmallIntegerField("Вес", default=0)
     number = models.IntegerField("Номер", default="")
-
-    age = models.PositiveBigIntegerField("Возраст", default=0)
-
+    age = models.ManyToManyField(Age, verbose_name="возраст")
     image = models.ImageField("Изображение", upload_to="animal/",default="default.jpg")
     extra_photo = models.ImageField("Дополнительное фото", upload_to="animal/",default="default.jpg")
     size = models.ManyToManyField(Size, verbose_name="размер")
     description = models.TextField("Описание", default="")
     go_to_shelter = models.DateField("Дата поступления в приют", default=date.today)
-    temperament = models.CharField("Темперамент", max_length=60, default="")
+    temperament = models.ManyToManyField(Temperament, verbose_name="темперамент")
     character = models.TextField("Характер",default="")
     health = models.CharField("Здоровье", max_length=100,default="")
     vaccination = models.ManyToManyField(Vaccination, verbose_name="прививки")
