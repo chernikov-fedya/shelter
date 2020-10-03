@@ -19,6 +19,7 @@ from appShelter import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index, name = 'index')
+    path('index/', views.index, name = 'index'),
+    path('modelindex/', views.modelindex,  name = 'modelindex')
 
 ]
