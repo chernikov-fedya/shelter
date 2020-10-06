@@ -1,9 +1,5 @@
 from random import Random
-
 from django.shortcuts import render
-
-
-# Create your views here.
 from appShelter.models import Animal
 
 
