@@ -1,0 +1,99 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+    overflow-x: hidden;
+}
+.main-color{
+    background-color: #CFDAFF;
+}
+.bord-radius{
+    border-radius: 60px;
+}
+.big-border {
+    z-index: 2;
+    display: block;
+    margin-top: 70px;
+    min-height: 360px;
+    min-width: 400px;
+    max-width: 830px;
+    max-height: 800px;
+}
+.catalog-card{
+    border: 0px solid #fff;
+    border-radius: 40px;
+}
+.title{
+    color: #4D4D4D;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+.thumbnail{
+    max-width: 720px;
+}
+.orange{
+    padding: 20px 26px;
+    min-width: 420px;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 26px;
+    color: #4D4D4D;
+    background-color: #FFE1D0;
+}
+.orange h3{
+    margin-left: 10px;
+    color: #747474;
+}
+.orange small{
+    margin-left: 16px;
+}
+.orange a{
+    list-style: none;
+}
+.but-green{
+    background-color: #CEF282;
+    max-width: 830px;
+    min-width: 160px;
+    margin-top: 8px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 26px;
+    height: 70px;
+    margin-left: 3%;
+}
+.but-green:hover{
+    transition: all 0.4s;
+    background: #c1f968;
+    transform: scale(1.05);
+}
+.but{
+    /*white-space: nowrap; блок не можеть содержать больше одной строчки*/
+    max-width: 460px;
+    min-width: 160px;
+    height: 69px;
+    margin-left:10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 26px;
+    background-color: #E8EDFF;
+}
+.but:hover{
+    transition: all 0.2s;
+    background: #a879dc;
+}
+/*.but:before{ икнока при наведении
+    font-family: FontAwesome, serif;
+    content:"\f07a";
+    top: 11px;
+    left: -30px;
+    transition: all 200ms ease;
+}
+.but:hover:before {
+    left: 7px;
+}*/
+.tabbable li{
+    margin-left: 5%;
+    margin-right: 5%;
+}
