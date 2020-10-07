@@ -5,7 +5,7 @@
     <title>Name</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="static/style/card.css">
+    <link rel="stylesheet" type="text/css" href="card.css">
     <link rel="stylesheet" href="../fontawesome-free-5.14.0-web/css/fontawesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -20,7 +20,7 @@
             <a class="navbar-brand" href="#">Fixed top</a>
         </nav>
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid bord-radius">
         <div class="row">
             <div class="col-auto big-border bord-radius">
                 <div class="row">
@@ -38,7 +38,7 @@
                             </div>
                         </div>
                         <div class="row align-content-around">
-                            <div class="col-md-8 orange">
+                            <div class="col-md-8 orange" style="margin-bottom: 20px; border-radius: 26px">
                                 <div class="row">
                                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
                                         <h3>Порода: </h3>
@@ -81,15 +81,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row justify-content-around">
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                                 <div class="d-flex flex-column">
                                     <p class="lead but">
-                                        <a class="btn btn-lg text-shadow box-shadow" href="#" role="button">ПОГУЛЯТЬ</a>
+                                        <a class="btn btn-lg text-shadow box-shadow"  href="#" role="button">ПОГУЛЯТЬ</a>
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6">
                                 <div class="d-flex flex-column">
                                     <p class="lead but">
                                         <a class="btn btn-lg text-shadow box-shadow" href="#" role="button">ВЗЯТЬ НА ПОПЕЧНИЕ</a>
@@ -110,39 +110,61 @@
                 </div>
             </div>
         </div>
-
-        <div class="container bord-radius orange">
-            <div class="row justify-content-center">
+    </div>
+    <div class="container-fluid down">
+            <div class="row justify-content-center orange">
                 <div class="tabbable">
-                    <div class="row-fluid">
+                    <div class="row justify-content-center">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#tab1" data-toggle="tab"><h3>Описание</h3></a></li>
-                                <li><a href="#tab2" data-toggle="tab"><h3>Характер</h3></a></li>
-                                <li><a href="#tab3" data-toggle="tab"><h3>Здоровье</h3></a></li>
-                                <li><a href="#tab4" data-toggle="tab"><h3>Дополнительно</h3></a></li>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab">
+                                        <h3>Описание</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab2" data-toggle="tab" role="tab">
+                                        <h3>Характер</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab3" data-toggle="tab" role="tab">
+                                        <h3>Здоровье</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab4" data-toggle="tab" role="tab">
+                                        <h3>Дополнительно</h3>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="row-fluid">
-                        <div class="tab-content col-auto">
-                            <div class="tab-pane active" id="tab1">
-                                <h3><small>Описание</small></h3>
+                    <div class="row justify-content-center">
+                        <div class="tab-content col-md-8">
+                            <div class="tab-pane active" id="tab1" role="tabpanel">
+                                <h3><small>Correlation social enterprise, data, academic inclusive society activate. Impact investing social entrepreneurship
+                                    green space LGBTQ+ program areas framework. Blended value agile humanitarian peaceful benefit corporation,
+                                    issue outcomes emerging game-changer leverage.</small></h3>
                             </div>
-                            <div class="tab-pane fade" id="tab2">
-                                <h3><small>Характер</small></h3>
+                            <div class="tab-pane fade" id="tab2" role="tabpanel">
+                                <h3><small>Co-create fairness, empathetic synergy effective altruism, systems
+                                    thinking think tank inspirational. Radical citizen-centered; collaborative consumption
+                                    impact when thought leader. Ecosystem mass incarceration shared value, milestones
+                                    capacity building or. Social entrepreneurship, and thought leader collective impact
+                                    citizen-centered social intrapreneurship outcomes do-gooder.</small></h3>
                             </div>
-                            <div class="tab-pane fade" id="tab3">
+                            <div class="tab-pane fade" id="tab3" role="tabpanel">
                                 <h3><small>Здоровье</small></h3>
                             </div>
-                            <div class="tab-pane fade" id="tab4">
+                            <div class="tab-pane fade" id="tab4" role="tabpanel">
                                 <h3><small>Дополнительно</small></h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
     </div>
 </body>
 </html>
