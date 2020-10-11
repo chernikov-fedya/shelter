@@ -16,10 +16,78 @@
 </head>
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-dark main-color">
-            <a class="navbar-brand" href="#">Fixed top</a>
-        </nav>
-
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 bg-light">
+                    <nav class="navbar navbar-expand-xl main-color navbar-light fixed-top">
+                        <a class="navbar-brand" href="#"><img src="img/{% logo-bl-small.png %}" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <!-- Пункты вертикального меню -->
+                            <ul class="navbar-nav d-flex flex-wrap">
+                                <li class="p-2 nav-item dropdown navbar-li">
+                                    <a class="nav-link dropdown-toggle" href="#" id="animalDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог животных</a>
+                                    <div class="dropdown-menu" aria-labelledby="animalDropdown">
+                                        <a class="dropdown-item" href="#">Собаки</a>
+                                        <a class="dropdown-item" href="#">Кошки</a>
+                                        <a class="dropdown-item" href="#">Лошади</a>
+                                    </div>
+                                </li>
+                                <li class="p-2 nav-item navbar-li">
+                                    <a class="nav-link" href="#">Мероприятия</a>
+                                </li>
+                                <li class="p-2 nav-item navbar-li">
+                                    <a class="nav-link" href="#">Волонтерство</a>
+                                </li>
+                                <li class="p-2 nav-item dropdown navbar-li">
+                                    <a class="nav-link dropdown-toggle" href="#" id="artDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Творчество</a>
+                                    <div class="dropdown-menu" aria-labelledby="artDropdown">
+                                        <a class="dropdown-item" href="#">Галерея</a>
+                                        <a class="dropdown-item" href="#">Литература</a>
+                                    </div>
+                                </li>
+                                <li class="p-2 nav-item dropdown navbar-li">
+                                    <a class="nav-link dropdown-toggle" href="#" id="helpDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Полезное</a>
+                                    <div class="dropdown-menu" aria-labelledby="helpDropdown">
+                                        <a class="dropdown-item" href="#">Советы</a>
+                                        <a class="dropdown-item" href="#">Ветеренарная клиника</a>
+                                        <a class="dropdown-item" href="#">Гостиница для животных</a>
+                                        <a class="dropdown-item" href="#">Продутовая база</a>
+                                        <a class="dropdown-item" href="#"></a>
+                                    </div>
+                                </li>
+                                <li class="p-2 nav-item navbar-li">
+                                    <a class="nav-link" href="#">Форум</a>
+                                </li>
+                                <li class="p-2 nav-item navbar-li">
+                                    <a class="nav-link" href="#">О приюте</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><button style="background-color: #7058B6; border-radius: 10px; color: #fff;" class="but-green-menu btn btn-md">ПОЖЕРТВОВАТЬ</button></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><button style="background-color: #7058B6; border-radius: 10px; color: #fff;" class="but-green-menu btn btn-md">СТАТЬ ВОЛОНТЕРОМ</button></a>
+                                </li>
+                                <li class="p-2 nav-item">
+                                    <a><button style="background-color: #E8EDFF; border-radius: 10px; margin-right: 8px;" class="but-icon-menu btn btn-sm">
+                                        <svg width="24px" height="30px" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                                        </svg>
+                                    </button></a>
+                                    <a><button style="background-color: #E8EDFF; border-radius: 10px;" class="but-icon-menu btn btn-sm">
+                                        <svg width="24px" height="30px" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"></path>
+                                        </svg>
+                                    </button></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <div class="container-fluid">
         <div class="row-fluid text-shadow">
@@ -83,7 +151,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a class="a-line" href="#">
+                    <a class="a-line" href="card/animal-card.html">
                         <img src="static/img/d-a.jpg" alt="Lights" class="catalog-card" style="width:100%">
                         <div class="caption">
                             <p>Иза</p>
@@ -93,7 +161,7 @@
             </div>
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a class="a-line" href="#">
+                    <a class="a-line" href="card/animal-card.html">
                         <img src="static/img/c-a.jpg" alt="Nature" class="catalog-card" style="width:100%">
                         <div class="caption">
                             <p>Хьюстон</p>
@@ -103,7 +171,7 @@
             </div>
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a class="a-line" href="#">
+                    <a class="a-line" href="card/animal-card.html">
                         <img src="static/img/c-b.jpg" alt="Fjords" class="catalog-card" style="width:100%">
                         <div class="caption">
                             <p>Луна</p>
