@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 {% load staticfiles %}
-<html lang="en">
+<html lang="ru">
 <head>
     <title>Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="static/style/style.css">
+    <link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
     <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/fontawesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -20,7 +21,7 @@
             <div class="row">
                 <div class="col-md-4 bg-light">
                     <nav class="navbar navbar-expand-xl main-color navbar-light fixed-top">
-                        <a class="navbar-brand" href="#"><img src="img/{% logo-bl-small.png %}" alt=""></a>
+                        <a class="navbar-brand" href="#"><img src="img/{% static "img/logo-bl-small.png" %}" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -92,7 +93,7 @@
     <div class="container-fluid">
         <div class="row-fluid text-shadow">
             <div class="col-auto big-border bord-radius">
-                <img src="static/img/main_dog.jpg" class="img" alt="Sample photo" style="border-radius: 60px;">
+                <img src="{% static "img/main_dog.jpg" %}" class="img" alt="Sample photo" style="border-radius: 60px;">
                 <div class="main">
                     <div class="center container">
                         <div class="row">
@@ -151,8 +152,8 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a class="a-line" href="card/animal-card.html">
-                        <img src="static/img/d-a.jpg" alt="Lights" class="catalog-card" style="width:100%">
+                    <a class="a-line" href="{% static "animal-card.html"%}">
+                        <img src="{% static "img/d-a.jpg" %}" alt="Lights" class="catalog-card" style="width:100%">
                         <div class="caption">
                             <p>Иза</p>
                         </div>
@@ -161,8 +162,8 @@
             </div>
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a class="a-line" href="card/animal-card.html">
-                        <img src="static/img/c-a.jpg" alt="Nature" class="catalog-card" style="width:100%">
+                    <a class="a-line" href="{% static "animal-card.html"%}">
+                        <img src="{% static "img/c-a.jpg" %}" alt="Nature" class="catalog-card" style="width:100%">
                         <div class="caption">
                             <p>Хьюстон</p>
                         </div>
@@ -171,8 +172,8 @@
             </div>
             <div class="col-md-4">
                 <div class="thumbnail">
-                    <a class="a-line" href="card/animal-card.html">
-                        <img src="static/img/c-b.jpg" alt="Fjords" class="catalog-card" style="width:100%">
+                    <a class="a-line" href="{% static "animal-card.html"%}">
+                        <img src="{% static "img/c-b.jpg"%}" alt="Fjords" class="catalog-card" style="width:100%">
                         <div class="caption">
                             <p>Луна</p>
                         </div>
@@ -191,19 +192,19 @@
                 <div class="row justify-content-center">
                     <div class="col-sm-4 col-md-4">
                         <!--<p><strong>Name</strong></p><br>-->
-                        <img src="static/img/dilli_2.jpg" alt="Random Name">
+                        <img src="{% static "img/dilli_2.jpg" %}" alt="Random Name">
                     </div>
                     <div class="col-sm-4 col-md-4">
-                        <img src="static/img/emk2.jpg" alt="Random Name">
+                        <img src="{%static "img/emk2.jpg" %}" alt="Random Name">
                     </div>
                     <div class="col-sm-4 col-md-4">
-                        <img src="static/img/ava.jpg" alt="Random Name">
+                        <img src="{% static "img/ava.jpg" %}" alt="Random Name">
                     </div>
                     <div class="col-sm-4 col-md-4">
-                        <img src="static/img/pet.jpg" alt="Random Name">
+                        <img src="{% static "img/pet.jpg" %}" alt="Random Name">
                     </div>
                     <div class="col-sm-4 col-md-4">
-                        <img src="static/img/dilli_2.jpg" alt="Random Name">
+                        <img src="{% static "img/dilli_2.jpg" %}" alt="Random Name">
                     </div>
                 </div>
             </div>
@@ -220,7 +221,7 @@
                         <div class="caption">
                             <h2 class="display-5 font-weight-bold title"><small>Ветеренарная клиника</small></h2>
                         </div>
-                        <img src="static/img/vet.jpg" alt="Lights" class="catalog-card" style="width:80%; margin-left: 10%">
+                        <img src="{% static "img/vet.jpg" %}" alt="Lights" class="catalog-card" style="width:80%; margin-left: 10%">
                         <p style="margin-left: 10%;"><small>Living a fully ethical life, changemaker; resist leverage society vibrant strategy.
                             Commitment social capital, resilient; targeted;
                             triple bottom line empathetic scalable. When scalable;</small>
@@ -232,7 +233,7 @@
                         <div class="caption">
                             <h2 class="display-5 font-weight-bold title"><small>Хостел для животных</small></h2>
                         </div>
-                        <img src="static/img/hostel.jpeg" alt="Nature" class="catalog-card" style="width:80%; margin-left: 10%">
+                        <img src="{% static "img/hostel.jpeg" %}" alt="Nature" class="catalog-card" style="width:80%; margin-left: 10%">
                         <p style="margin-left: 10%;"><small>Living a fully ethical life, changemaker; resist leverage society vibrant strategy.
                             Commitment social capital, resilient; targeted;
                             triple bottom line empathetic scalable. When scalable;</small>
@@ -244,7 +245,7 @@
                         <div class="caption">
                             <h2 class="display-5 font-weight-bold title"><small>Продуктовая база</small></h2>
                         </div>
-                        <img src="static/img/food.jpeg" alt="Fjords" class="catalog-card" style="width:80%; margin-left: 10%">
+                        <img src="{% static "img/food.jpeg" %}" alt="Fjords" class="catalog-card" style="width:80%; margin-left: 10%">
                         <p style="margin-left: 10%;"><small>Living a fully ethical life, changemaker; resist leverage society vibrant strategy.
                             Commitment social capital, resilient; targeted;
                             triple bottom line empathetic scalable. When scalable;</small>
@@ -258,7 +259,7 @@
         <div class="container-fluid full" style="border-radius: 60px 60px 0px 0;">
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
-                    <img src="static/img/logoo.png" alt="Fjords" class="catalog-card">
+                    <img src="{% static "img/logoo.png" %}" alt="Fjords" class="catalog-card">
                 </div>
             </div>
             <br>

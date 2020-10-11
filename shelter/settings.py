@@ -52,12 +52,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'shelter.urls'
 
-TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
+STATIC_URL = '/static/'
+
+TEMPLATE_DIRS = os.path.join(BASE_DIR, "static")
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR]
+        'DIRS': [TEMPLATE_DIRS]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
