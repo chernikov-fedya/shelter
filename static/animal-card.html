@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Name</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="static/style/card.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.14.0-web/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 bg-light">
+                    <nav class="navbar navbar-expand-xl main-color navbar-light fixed-top">
+                        <a class="navbar-brand" href="index.html"><img src="img/{% logo-bl-small.png %}" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <!-- Пункты вертикального меню -->
+                            <ul class="navbar-nav d-flex flex-wrap">
+                                <li class="p-2 nav-item dropdown navbar-li">
+                                    <a class="nav-link dropdown-toggle" href="#" id="animalDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог животных</a>
+                                    <div class="dropdown-menu" aria-labelledby="animalDropdown">
+                                        <a class="dropdown-item" href="#">Собаки</a>
+                                        <a class="dropdown-item" href="#">Кошки</a>
+                                        <a class="dropdown-item" href="#">Лошади</a>
+                                    </div>
+                                </li>
+                                <li class="p-2 nav-item navbar-li">
+                                    <a class="nav-link" href="#">Мероприятия</a>
+                                </li>
+                                <li class="p-2 nav-item navbar-li">
+                                    <a class="nav-link" href="#">Волонтерство</a>
+                                </li>
+                                <li class="p-2 nav-item dropdown navbar-li">
+                                    <a class="nav-link dropdown-toggle" href="#" id="artDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Творчество</a>
+                                    <div class="dropdown-menu" aria-labelledby="artDropdown">
+                                        <a class="dropdown-item" href="#">Галерея</a>
+                                        <a class="dropdown-item" href="#">Литература</a>
+                                    </div>
+                                </li>
+                                <li class="p-2 nav-item dropdown navbar-li">
+                                    <a class="nav-link dropdown-toggle" href="#" id="helpDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Полезное</a>
+                                    <div class="dropdown-menu" aria-labelledby="helpDropdown">
+                                        <a class="dropdown-item" href="#">Советы</a>
+                                        <a class="dropdown-item" href="#">Ветеренарная клиника</a>
+                                        <a class="dropdown-item" href="#">Гостиница для животных</a>
+                                        <a class="dropdown-item" href="#">Продутовая база</a>
+                                        <a class="dropdown-item" href="#"></a>
+                                    </div>
+                                </li>
+                                <li class="p-2 nav-item navbar-li">
+                                    <a class="nav-link" href="#">Форум</a>
+                                </li>
+                                <li class="p-2 nav-item navbar-li">
+                                    <a class="nav-link" href="#">О приюте</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><button style="background-color: #7058B6; border-radius: 10px; color: #fff;" class="but-green-menu btn btn-md">ПОЖЕРТВОВАТЬ</button></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><button style="background-color: #7058B6; border-radius: 10px; color: #fff;" class="but-green-menu btn btn-md">СТАТЬ ВОЛОНТЕРОМ</button></a>
+                                </li>
+                                <li class="p-2 nav-item">
+                                    <a><button style="background-color: #E8EDFF; border-radius: 10px; margin-right: 8px;" class="but-icon-menu btn btn-sm">
+                                        <svg width="24px" height="30px" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                                        </svg>
+                                    </button></a>
+                                    <a><button style="background-color: #E8EDFF; border-radius: 10px;" class="but-icon-menu btn btn-sm">
+                                        <svg width="24px" height="30px" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"></path>
+                                        </svg>
+                                    </button></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid bord-radius">
+        <div class="row">
+            <div class="col-auto big-border bord-radius">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mx-auto d-block">
+                        <div class="thumbnail">
+                            <a class="a-line" href="#">
+                                <img src="img/{% d-a.jpg %}" alt="Fjords" class="catalog-card" style="width:100%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-12">
+                                <h1 class="display-4 font-weight-bold title">Иза</h1>
+                            </div>
+                        </div>
+                        <div class="row align-content-around">
+                            <div class="col-md-8 orange" style="margin-bottom: 20px; border-radius: 26px">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                                        <h3>Порода: </h3>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
+                                        <h3><small>порода</small></h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                                        <h3>Возраст: </h3>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
+                                        <h3><small>6 лет</small></h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                                        <h3>Номер: </h3>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
+                                        <h3><small>098-894-322</small></h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                                        <h3>Пол: </h3>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
+                                        <h3><small>самец</small></h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                                        <h3>Прибыл: </h3>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
+                                        <h3><small>26.01.2016</small></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                                <div class="d-flex flex-column">
+                                    <p class="lead but">
+                                        <a class="btn btn-lg text-shadow box-shadow"  href="#" role="button">ПОГУЛЯТЬ</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6">
+                                <div class="d-flex flex-column">
+                                    <p class="lead but">
+                                        <a class="btn btn-lg text-shadow box-shadow" href="#" role="button">ВЗЯТЬ НА ПОПЕЧНИЕ</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="d-flex flex-column">
+                                    <p class="lead but-green">
+                                        <a class="btn btn-lg text-shadow box-shadow" href="#" role="button">ЗАБРАТЬ ДОМОЙ</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid down">
+            <div class="row justify-content-center orange">
+                <div class="tabbable">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <ul class="nav nav-tabs nav-justified" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab">
+                                        <h3>Описание</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab2" data-toggle="tab" role="tab">
+                                        <h3>Характер</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab3" data-toggle="tab" role="tab">
+                                        <h3>Здоровье</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab4" data-toggle="tab" role="tab">
+                                        <h3>Дополнительно</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="tab-content col-md-8">
+                            <div class="tab-pane active" id="tab1" role="tabpanel">
+                                <h3><small>Correlation social enterprise, data, academic inclusive society activate. Impact investing social entrepreneurship
+                                    green space LGBTQ+ program areas framework. Blended value agile humanitarian peaceful benefit corporation,
+                                    issue outcomes emerging game-changer leverage.</small></h3>
+                            </div>
+                            <div class="tab-pane fade" id="tab2" role="tabpanel">
+                                <h3><small>Co-create fairness, empathetic synergy effective altruism, systems
+                                    thinking think tank inspirational. Radical citizen-centered; collaborative consumption
+                                    impact when thought leader. Ecosystem mass incarceration shared value, milestones
+                                    capacity building or. Social entrepreneurship, and thought leader collective impact
+                                    citizen-centered social intrapreneurship outcomes do-gooder.</small></h3>
+                            </div>
+                            <div class="tab-pane fade" id="tab3" role="tabpanel">
+                                <h3><small>Здоровье</small></h3>
+                            </div>
+                            <div class="tab-pane fade" id="tab4" role="tabpanel">
+                                <h3><small>Дополнительно</small></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

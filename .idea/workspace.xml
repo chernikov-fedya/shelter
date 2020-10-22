@@ -19,10 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e7a87c9-369e-42da-b9b4-df9741f52a79" name="Default Changelist" comment="noChange">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2020_18_02__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2020_18_02__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="2e7a87c9-369e-42da-b9b4-df9741f52a79" name="Default Changelist" comment="add index.html in static directory in root folder&#10;comment 3 row">
+      <change afterPath="$PROJECT_DIR$/static/style/card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/ava.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/ava.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/c-a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/c-a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/c-b.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/c-b.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/d-a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/d-a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/dilli_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/dilli_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/emk2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/emk2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/food.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/food.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/hostel.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/hostel.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/logo-bl-small.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/logo-bl-small.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/logoo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/logoo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/m.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/m.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/main_dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/main_dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/pet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/pet.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/img/vet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/vet.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +68,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\PycharmProjects\shelter\static" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\PycharmProjects\shelter\static" />
       <recent name="C:\Users\Admin\PycharmProjects\shelter\appShelter" />
@@ -68,6 +86,7 @@
       <updated>1602157908601</updated>
       <workItem from="1602157910207" duration="3273000" />
       <workItem from="1603191710509" duration="5732000" />
+      <workItem from="1603357176032" duration="112000" />
     </task>
     <task id="LOCAL-00001" summary="починка вкладок">
       <created>1603195974625</created>
@@ -83,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603196109551</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add index.html in static directory in root folder&#10;comment 3 row">
+      <created>1603223592521</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603223592521</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,7 +130,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="починка вкладок" />
     <MESSAGE value="починка" />
-    <option name="LAST_COMMIT_MESSAGE" value="починка" />
+    <MESSAGE value="add index.html in static directory in root folder&#10;comment 3 row" />
+    <option name="LAST_COMMIT_MESSAGE" value="add index.html in static directory in root folder&#10;comment 3 row" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1603193498413">
@@ -115,10 +142,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603191744901" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603196196378">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603223595586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603196196378" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603223595586" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603194103970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

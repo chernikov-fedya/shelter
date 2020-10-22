@@ -1,0 +1,168 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+    overflow-x: hidden;
+}
+.main-color{
+    background-color: #CFDAFF;
+}
+.bord-radius{
+    border-radius: 60px;
+}
+.big-border {
+    z-index: 2;
+    display: block;
+    margin-top: 70px;
+    min-height: 360px;
+    min-width: 400px;
+    max-width: 830px;
+    max-height: 800px;
+}
+.catalog-card{
+    border: 0px solid #fff;
+    border-radius: 40px;
+}
+.title{
+    color: #4D4D4D;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+.thumbnail{
+    max-width: 720px;
+}
+.orange{
+    padding: 20px 26px;
+    min-width: 420px;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #4D4D4D;
+    background-color: #FFE1D0;
+}
+.orange h3{
+    margin-left: 10px;
+    color: #747474;
+}
+.orange small{
+    margin-left: 16px;
+}
+.orange a{
+    list-style: none;
+}
+.but-green{
+    background-color: #CEF282;
+    max-width: 830px;
+    min-width: 160px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 64px;
+    border-radius: 26px;
+    height: 70px;
+}
+.but-green:hover{
+    transition: all 0.4s;
+    background: #c1f968;
+    transform: scale(1.05);
+}
+.but{
+    /*white-space: nowrap; блок не можеть содержать больше одной строчки*/
+    max-width: 510px;
+    min-width: 160px;
+    height: 69px;
+    text-align: center;
+    line-height: 64px;
+    border-radius: 26px;
+    background-color: #E8EDFF;
+}
+.but:hover{
+    transition: all 0.2s;
+    background: #a879dc;
+}
+.tabbable a{
+    border-radius: 16px;
+    border-style: none;
+}
+.tab-content{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+@media (min-width: 290px) {
+    .down{
+        position: relative;
+        top: 394px;
+    }
+}
+
+/* sm-устройства (больше или равно 576px) */
+@media (min-width: 576px) {
+    .down{
+        position: relative;
+        top: 230px;
+    }
+}
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) {
+    .down{
+        position: relative;
+        top: 300px;
+    }
+}
+/* lg-устройства (больше или равно 992px) */
+@media (min-width: 992px) {
+    .down{
+        position: relative;
+        top: 60px;
+    }
+}
+/* xl-устройства (больше или равно 1200px) */
+@media (min-width: 1200px) {
+    .down{
+        position: relative;
+        top: 40px;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .navbar-container {
+        position: sticky;
+        top: 0;
+        overflow-y: auto;
+        height: 100vh;
+    }
+    .navbar-container .navbar {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 100%;
+    }
+    .navbar-container .navbar-collapse {
+        align-items: flex-start;
+    }
+    .navbar-container .nav {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .navbar-container .navbar-nav {
+        flex-direction: column !important;
+    }
+}
+.navbar-li:hover{
+    background-color: #e8edff;
+    border-radius: 10px;
+}
+.navbar img{
+    margin-right: 4px;
+}
+.but-green-menu{
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+}
+.navbar img{
+    height: 48px;
+    width: 48px;
+}
