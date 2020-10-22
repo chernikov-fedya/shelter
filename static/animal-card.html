@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-{% load staticfiles %}
+{#{% load staticfiles %}#}
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Name</title>
+    <title>{{ animal.name }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="static/style/card.css">
+    <link rel="stylesheet" type="text/css" href="../templates/static/style/card.css">
     <link rel="stylesheet" href="../fontawesome-free-5.14.0-web/css/fontawesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-md-4 bg-light">
                     <nav class="navbar navbar-expand-xl main-color navbar-light fixed-top">
-                        <a class="navbar-brand" href="index.html"><img src="img/{% logo-bl-small.png %}" alt=""></a>
+                        <a class="navbar-brand" href="../templates/index.html"><img src="img/{% logo-bl-small.png %}" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -114,7 +114,7 @@
                                         <h3>Порода: </h3>
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
-                                        <h3><small>порода</small></h3>
+                                        <h3><small>{{ animal.breed.name }}</small></h3>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -122,7 +122,7 @@
                                         <h3>Возраст: </h3>
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
-                                        <h3><small>6 лет</small></h3>
+                                        <h3><small>{{ animal.age.name }}</small></h3>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -130,7 +130,7 @@
                                         <h3>Номер: </h3>
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
-                                        <h3><small>098-894-322</small></h3>
+                                        <h3><small>{{ animal.number }}</small></h3>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -138,7 +138,7 @@
                                         <h3>Пол: </h3>
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
-                                        <h3><small>самец</small></h3>
+                                        <h3><small>{{ animal.gender.name }}</small></h3>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -146,7 +146,7 @@
                                         <h3>Прибыл: </h3>
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
-                                        <h3><small>26.01.2016</small></h3>
+                                        <h3><small>{{ animal.go_to_shelter }}</small></h3>
                                     </div>
                                 </div>
                             </div>

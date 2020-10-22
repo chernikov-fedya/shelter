@@ -20,6 +20,6 @@ from appShelter import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index, name = 'index'),
-    path('modelindex/', views.modelindex,  name = 'modelindex')
+    path('animalcard/', views.animalcard,  name = 'animalcard')
 
 ]
