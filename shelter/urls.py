@@ -28,8 +28,8 @@ from appShelter import views
 # символа для точного определения нашего шаблона. Он должен совпадать только с /hello/, не больше и не меньше.
 
 urlpatterns = [
-    path('^admin/$', admin.site.urls),
-    path('^index/$', views.index, name = 'index'),
-    path('^modelindex/$', views.modelindex,  name = 'modelindex')
+    path('admin/', admin.site.urls),
+    path('index/', views.index, name = 'index'),
+    path('modelindex/', views.modelindex,  name = 'modelindex')
 
 ]
