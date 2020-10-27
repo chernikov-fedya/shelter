@@ -13,10 +13,6 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path
-from appShelter import views
-
 # Шаблон включает в себя символы ^ и $. Они являются символами регулярного выражения, которые имеют особое значение:
 # ^ означает «требовать, чтобы шаблон совпадал с начала строки», а $ означает «требовать, чтобы шаблон совпадал до конца строки».
 #
@@ -27,9 +23,15 @@ from appShelter import views
 # соответствовал любой URL, содержащий hello/. Например, такой как /foo/hello/bar. Следовательно, мы используем оба этих специальных
 # символа для точного определения нашего шаблона. Он должен совпадать только с /hello/, не больше и не меньше.
 
+from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index, name = 'index'),
-    path('animalcard/', views.animalcard,  name = 'animalcard')
-
+    path('index/', include("appShelter.urls")),
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
