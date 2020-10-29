@@ -1,5 +1,7 @@
 from django.db import models
 from django.utils.datetime_safe import date
+from django.utils.text import slugify
+from django.urls import reverse
 
 class Gender(models.Model):
     gender = models.CharField("Пол", max_length=30)
@@ -72,31 +74,36 @@ class Temperament(models.Model):
     class Meta:
         verbose_name = "Темперамент"
         verbose_name_plural = "Темпераменты"
-
+    
 class Animal(models.Model):
     name = models.CharField("Кличка", max_length=60)
-    type = models.ManyToManyField(Type, verbose_name="вид")
-    breed = models.ManyToManyField(Breed, verbose_name="порода")
-    gender = models.ManyToManyField(Gender, verbose_name="пол", related_name="animal_gender")
+    type = models.ForeignKey(Type, verbose_name="вид", on_delete=models.CASCADE)
+    breed = models.ForeignKey(Breed, verbose_name="порода", on_delete=models.CASCADE)
     weight = models.PositiveSmallIntegerField("Вес", default=0)
+    gender = models.ForeignKey(Gender, verbose_name="пол", related_name="animal_gender", on_delete=models.CASCADE)
     number = models.IntegerField("Номер", default="")
-    age = models.ManyToManyField(Age, verbose_name="возраст")
-    image = models.ImageField("Изображение", upload_to="animal/",default="default.jpg")
-    extra_photo = models.ImageField("Дополнительное фото", upload_to="animal/",default="default.jpg")
-    size = models.ManyToManyField(Size, verbose_name="размер")
+    age = models.ForeignKey(Age, verbose_name="возраст", on_delete=models.CASCADE)
+    image = models.ImageField("Изображение", upload_to="animal/", default="default.jpg")
+    extra_photo = models.ImageField("Дополнительное фото", upload_to="animal/", default="default.jpg")
+    size = models.ForeignKey(Size, verbose_name="размер", on_delete=models.CASCADE)
     description = models.TextField("Описание", default="")
     go_to_shelter = models.DateField("Дата поступления в приют", default=date.today)
-    temperament = models.ManyToManyField(Temperament, verbose_name="темперамент")
+    temperament = models.ForeignKey(Temperament, verbose_name="темперамент", on_delete=models.CASCADE)
     character = models.TextField("Характер",default="")
     health = models.CharField("Здоровье", max_length=100,default="")
-    #vaccination = models.ManyToManyField(Vaccination, verbose_name="прививки")
+    #vaccination = models.ForeignKey(Vaccination, verbose_name="прививки", on_delete=models.CASCADE)
     sterilize = models.BooleanField("Стерилизация", default="")
     video = models.FileField("Видео",upload_to="upload_location",blank=True,null=True)
     needs = models.CharField("Нужды", max_length=100, default="")
     draft = models.BooleanField("Черновик", default=False)
+    slug = models.SlugField()
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+            return reverse('appShelter:animalcard',
+                           args=[self.id, self.slug])
 
     class Meta:
         verbose_name = "Животное"

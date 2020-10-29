@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=60, verbose_name='Кличка')),
                 ('weight', models.PositiveSmallIntegerField(default=0, verbose_name='Вес')),
                 ('number', models.ImageField(max_length=30, upload_to='', verbose_name='Номер')),
-                ('age', models.PositiveBigIntegerField(default=0, verbose_name='Возраст')),
+                ('age', models.PositiveIntegerField(default=0, verbose_name='Возраст')),
                 ('image', models.ImageField(upload_to='animal/', verbose_name='Изображение')),
                 ('extra_photo', models.ImageField(upload_to='animal/', verbose_name='Дополнительное фото')),
                 ('size', models.CharField(max_length=60, verbose_name='Размер')),
