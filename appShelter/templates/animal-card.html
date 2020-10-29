@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% block content %}
+      <div class="row align-content-around">
+          <div class="col-md-8 orange" style="margin-bottom: 20px; border-radius: 26px">
+              <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                      <h3>Порода: </h3>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
+                      <h3><small>{{ animal.breed }}</small></h3>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                      <h3>Возраст: </h3>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
+                      <h3><small>{{ animal.age }}</small></h3>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                      <h3>Номер: </h3>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
+                      <h3><small>0{{ animal.numder }}</small></h3>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                      <h3>Пол: </h3>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
+                      <h3><small>{{ animal.gender }}</small></h3>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                      <h3>Прибыл: </h3>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 align-self-sm-end">
+                      <h3><small>{{ animal.go_to_shelter }}</small></h3>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <div class="d-flex flex-column">
+                  <p class="lead but">
+                      <a class="btn btn-lg text-shadow box-shadow"  href="#" role="button">ПОГУЛЯТЬ</a>
+                  </p>
+              </div>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6">
+              <div class="d-flex flex-column">
+                  <p class="lead but">
+                      <a class="btn btn-lg text-shadow box-shadow" href="#" role="button">ВЗЯТЬ НА ПОПЕЧНИЕ</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="d-flex flex-column">
+                  <p class="lead but-green">
+                      <a class="btn btn-lg text-shadow box-shadow" href="#" role="button">ЗАБРАТЬ ДОМОЙ</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid down">
+      <div class="row justify-content-center orange">
+          <div class="tabbable">
+              <div class="row justify-content-center">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                      <ul class="nav nav-tabs nav-justified" role="tablist">
+                         <li class="nav-item">
+                            <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab">
+                                <h3>Описание</h3>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#tab2" data-toggle="tab" role="tab">
+                                        <h3>Характер</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab3" data-toggle="tab" role="tab">
+                                        <h3>Здоровье</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab4" data-toggle="tab" role="tab">
+                                        <h3>Дополнительно</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="tab-content col-md-8">
+                            <div class="tab-pane active" id="tab1" role="tabpanel">
+                                <h3><small>{{ animal.description }}</small></h3>
+                            </div>
+                            <div class="tab-pane fade" id="tab2" role="tabpanel">
+                                <h3><small>{{ animal.character }}</small></h3>
+                            </div>
+                            <div class="tab-pane fade" id="tab3" role="tabpanel">
+                                <h3><small>{{ animal.health }}</small></h3>
+                            </div>
+                            <div class="tab-pane fade" id="tab4" role="tabpanel">
+                                <h3><small>Дополнительно</small></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+{% endblock %}
