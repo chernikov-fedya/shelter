@@ -5,7 +5,7 @@
     {% for animal in all_animal %}
       <div class="col-md-4">
           <div class="thumbnail">
-             <a class="a-line" href="{{ animal.get_absolute_url }}">
+             <a class="a-line" target="_blank" href="{{ animal.get_absolute_url }}">
                 <img src="{{ animal.image.url }}" alt="Lights" class="catalog-card" width="600" height="250" style="width:100%">
                   <div class="caption">
                       <p>{{ animal.name }}</p>
