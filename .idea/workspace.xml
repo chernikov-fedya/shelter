@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e7a87c9-369e-42da-b9b4-df9741f52a79" name="Default Changelist" comment="Add template to url&#10;Add .idea to gitignore" />
+    <list default="true" id="2e7a87c9-369e-42da-b9b4-df9741f52a79" name="Default Changelist" comment="Add template to url&#10;Add .idea to gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_10_2020_2_41__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_10_2020_2_41__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shelter/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shelter/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shelter/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shelter/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="35397995-f995-499c-8c1a-d89086440970" />
+  <component name="JupyterTrust" id="ca823fa2-5bec-405f-a5f9-0657694260ce" />
   <component name="ProjectId" id="1iauDytbfYk15kUIaXiySnJeKmU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -51,13 +59,13 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\PycharmProjects\shelter\static" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\PycharmProjects\shelter\static" />
       <recent name="C:\Users\Admin\PycharmProjects\shelter\templates\static" />
       <recent name="C:\Users\Admin\PycharmProjects\shelter\appShelter" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\PycharmProjects\shelter\static" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -73,6 +81,7 @@
       <workItem from="1603357176032" duration="1513000" />
       <workItem from="1603358747546" duration="220000" />
       <workItem from="1603986109539" duration="302000" />
+      <workItem from="1605006386145" duration="301000" />
     </task>
     <task id="LOCAL-00001" summary="починка вкладок">
       <created>1603195974625</created>
@@ -152,10 +161,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603358658094" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603194103970">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605006388036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603194103970" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605006388036" />
     <state x="991" y="85" width="585" height="801" key="find.popup" timestamp="1603196808626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
