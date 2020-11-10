@@ -19,14 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e7a87c9-369e-42da-b9b4-df9741f52a79" name="Default Changelist" comment="Add template to url&#10;Add .idea to gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_10_2020_2_41__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_10_2020_2_41__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelter.iml" afterDir="false" />
+    <list default="true" id="2e7a87c9-369e-42da-b9b4-df9741f52a79" name="Default Changelist" comment="debug = false&#10;allowed_hosts added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shelter/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shelter/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shelter/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shelter/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +75,7 @@
       <workItem from="1603357176032" duration="1513000" />
       <workItem from="1603358747546" duration="220000" />
       <workItem from="1603986109539" duration="302000" />
-      <workItem from="1605006386145" duration="301000" />
+      <workItem from="1605006386145" duration="2338000" />
     </task>
     <task id="LOCAL-00001" summary="починка вкладок">
       <created>1603195974625</created>
@@ -118,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603358656716</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="debug = false&#10;allowed_hosts added">
+      <created>1605006782687</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605006782687</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +143,8 @@
     <MESSAGE value="add index.html in static directory in root folder&#10;comment 3 row" />
     <MESSAGE value="Copy all files" />
     <MESSAGE value="Add template to url&#10;Add .idea to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add template to url&#10;Add .idea to gitignore" />
+    <MESSAGE value="debug = false&#10;allowed_hosts added" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug = false&#10;allowed_hosts added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603358667100">
@@ -157,14 +159,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603191744901" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603358658094">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605006786900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603358658094" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605006388036">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605006786900" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605007376244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605006388036" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605007376244" />
     <state x="991" y="85" width="585" height="801" key="find.popup" timestamp="1603196808626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
