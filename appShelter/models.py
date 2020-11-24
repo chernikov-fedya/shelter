@@ -95,6 +95,7 @@ class Animal(models.Model):
     sterilize = models.BooleanField("Стерилизация", default="")
     video = models.FileField("Видео",upload_to="upload_location",blank=True,null=True)
     needs = models.CharField("Нужды", max_length=100, default="")
+    in_shelter = models.BooleanField("Нахождение в приюте", default=True)
     draft = models.BooleanField("Черновик", default=False)
     slug = models.SlugField()
 
