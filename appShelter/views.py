@@ -1,6 +1,9 @@
 from appShelter.models import *
-from django.db.models import Q
+from .utils import *
+from django.db.models import Q, Sum, Count
 from django.shortcuts import render, get_object_or_404
+import pandas as pd
+from .filters import AnimalFilter
 
 def index(request):
     search_query = request.GET.get('search', '')#поиск_животных
@@ -9,7 +12,10 @@ def index(request):
                                            Q(age__name__icontains=search_query))
     else:
         all_animal = Animal.objects.all()
-    context = {'all_animal': all_animal}
+    context = {
+                'all_animal': all_animal,
+               }
+
     return render(request, "index.html", context)
 
 def animalcard(request, slug, id):
@@ -17,4 +23,8 @@ def animalcard(request, slug, id):
     return render(request, "animal-card.html", {'animal': animal})
 
 def catalog(request):
-    return render(request, "catalog.html", )
+    animals = Animal.objects.all()
+    myFilter = AnimalFilter(request.GET, queryset=animals)
+    animals = myFilter.qs
+    context = {'animals': animals, 'myFilter': myFilter}
+    return render(request, "catalog.html", context)
